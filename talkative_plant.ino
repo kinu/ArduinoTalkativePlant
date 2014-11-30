@@ -49,7 +49,7 @@ void loop() {
   // http://seeedstudio.com/wiki/Grove_-_Moisture_Sensor
   // dry: 0-300
   // humid: 300-700
-  if (sensorValue < 250) {
+  if (sensorValue < 200) {
     playSound(thirsty, ARRAYSIZE(thirsty), abs(diff) > 100);
   } else if (lastSensorValue < 50) {
     playSound(wasdying, ARRAYSIZE(wasdying), true);
